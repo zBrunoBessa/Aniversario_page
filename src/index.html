@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aniversario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
-    <h1>Ola</h1>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/baloeoss.png" alt="Baloes">
+            <p class="hero__text">
+                O aniversario começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Entrada</b>
+                        Gratuita
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        03/01/2024 ás 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Pegue aqui seu ingresso
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <section class="event event--bolo">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bolo de Frutas</h2>
+                <p class="event__details__description">
+                    Bolo de frutas: Abacaxi, Morango, Kimi, Manga. Tamanho extra gigante para voce comer a vontade
+                </p>
+            </div>
+            <img class="event__image" src="./images/bolo.jpg" alt="Bolo">
+        </div>
+    </section>
+    <section class="event event--brinquedo event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Brinquedos para a criançada</h2>
+                <p class="event__details__description">
+                    Havera diversos brinquedos para a criançada se divertir como: Cama-Elastica, Piscina de Bolinhas, Escorregador Gigante, Touro mecanico e muito mais.
+
+                </p>
+            </div>
+            <img class="event__image" src="./images/brinquedo.jpg" alt="brinquedo">
+        </div>
+    </section>
+    <section class="event event--doces">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Aperitivos diversificados</h2>
+                <p class="event__details__description">
+                    Diversos doces e salgados como: Brigadeiros, Beijinhos e Salgados como coxinha, pastelzinhos, bolinha de queijo e muito mais.
+
+                </p>
+            </div>
+            <img class="event__image" src="./images/doces.jpg" alt="Doces">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
